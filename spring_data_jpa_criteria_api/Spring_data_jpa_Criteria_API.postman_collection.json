@@ -1,0 +1,77 @@
+{
+	"id": "3f57b5f1-e424-0214-6349-29e9ac89c6fc",
+	"name": "Spring_data_jpa_Criteria_API",
+	"description": "this application showcases on how to implement the search function that has to funcations:\n1. search is case is insensitive\n2. return all the todos entities whose name or description is matching the search criteria.",
+	"order": [
+		"90298731-b864-c8ba-0df8-d11b7130b085",
+		"735eed36-1aaa-422f-8d6e-2a2f140f227d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1513534882838,
+	"owner": "2037757",
+	"public": false,
+	"requests": [
+		{
+			"id": "735eed36-1aaa-422f-8d6e-2a2f140f227d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/v1/todo",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3f57b5f1-e424-0214-6349-29e9ac89c6fc",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create new todos record in todos table",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1513535000275,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"name\" : \"ranjittodo\",\n\t\"description\" : \"some description\"\n}"
+		},
+		{
+			"id": "90298731-b864-c8ba-0df8-d11b7130b085",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/v1/todos/some",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3f57b5f1-e424-0214-6349-29e9ac89c6fc",
+			"data": null,
+			"dataMode": "params",
+			"name": "Retrieve all the todos entities whose name or description contains \"some\" keyword",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1513534960870,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
