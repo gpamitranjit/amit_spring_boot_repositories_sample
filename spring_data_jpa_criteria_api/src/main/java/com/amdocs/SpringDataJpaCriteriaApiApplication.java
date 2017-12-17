@@ -9,6 +9,7 @@ public class SpringDataJpaCriteriaApiApplication {
 	public static void main(String[] args) {
 //		some comment
 //		some other comment
+//		adding third comment
 		SpringApplication.run(SpringDataJpaCriteriaApiApplication.class, args);
 	}
 }
