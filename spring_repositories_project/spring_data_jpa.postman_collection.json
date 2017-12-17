@@ -1,0 +1,125 @@
+{
+	"id": "e6c20eae-8b85-adec-f388-01c5052c2395",
+	"name": "spring_data_jpa",
+	"description": "this collection includes spring data jpa requests used for the created sample project",
+	"order": [],
+	"folders": [
+		{
+			"name": "spring_data_jpa_requests",
+			"description": "spring_data_jpa_requests",
+			"collectionId": "e6c20eae-8b85-adec-f388-01c5052c2395",
+			"order": [
+				"bd8985d8-c4e0-d6ae-0ec4-35841bbcb999",
+				"19404111-99ef-ee55-f233-955a16f513b8",
+				"7eeb1160-32de-6c31-dd41-dcce939fa485"
+			],
+			"owner": "2037757",
+			"folders_order": [],
+			"id": "cbd11683-6428-87be-12ea-f2b0a96a5e3f"
+		}
+	],
+	"folders_order": [
+		"cbd11683-6428-87be-12ea-f2b0a96a5e3f"
+	],
+	"timestamp": 1513151004688,
+	"owner": "2037757",
+	"public": false,
+	"requests": [
+		{
+			"id": "19404111-99ef-ee55-f233-955a16f513b8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/v1/todo/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "e6c20eae-8b85-adec-f388-01c5052c2395",
+			"data": null,
+			"dataMode": "params",
+			"name": "delete one entry from todos table whose id is {id}",
+			"description": "delete one entry from todos table whose id is {id}",
+			"descriptionFormat": "html",
+			"time": 1513150699777,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "cbd11683-6428-87be-12ea-f2b0a96a5e3f"
+		},
+		{
+			"id": "7eeb1160-32de-6c31-dd41-dcce939fa485",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/v1/todos",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e6c20eae-8b85-adec-f388-01c5052c2395",
+			"data": null,
+			"dataMode": "params",
+			"name": "Retrieve all the records from todos table",
+			"description": "Retrieve all the records from todos table",
+			"descriptionFormat": "html",
+			"time": 1513150729721,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "cbd11683-6428-87be-12ea-f2b0a96a5e3f",
+			"isFromCollection": true,
+			"collectionRequestId": "2c50e3ab-4cc4-cc7c-09cf-c0fea4c0adc8"
+		},
+		{
+			"id": "bd8985d8-c4e0-d6ae-0ec4-35841bbcb999",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/v1/todo",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e6c20eae-8b85-adec-f388-01c5052c2395",
+			"data": [],
+			"dataMode": "raw",
+			"name": "make entries into todos table",
+			"description": "make entries into todos table (id will be generated automatically)",
+			"descriptionFormat": "html",
+			"time": 1513150644723,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "cbd11683-6428-87be-12ea-f2b0a96a5e3f",
+			"rawModeData": "{\n\t\"name\" : \"todays' todo list\",\n\t\"description\" : \"this is some description about todo\"\n}"
+		}
+	]
+}

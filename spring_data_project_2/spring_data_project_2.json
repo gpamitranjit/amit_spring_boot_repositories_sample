@@ -1,0 +1,101 @@
+{
+	"id": "1f44c0f6-9fb0-e934-6af0-dc071b78501f",
+	"name": "Spring_Data_jpa_repositories",
+	"description": "this illustrates the use of JpaRepositories provided by spring data jpa project",
+	"order": [
+		"3df17762-3f9c-5f1b-9e2f-3533587eec33",
+		"2d2b2e98-e7c2-df7f-c3d4-8a38c6650792",
+		"24d0097e-fb00-2ffb-d815-1ff524dfe27d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1513245876690,
+	"owner": "2037757",
+	"public": false,
+	"requests": [
+		{
+			"id": "24d0097e-fb00-2ffb-d815-1ff524dfe27d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/v1/find/todos/like/todo",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1f44c0f6-9fb0-e934-6af0-dc071b78501f",
+			"data": null,
+			"dataMode": "params",
+			"name": "retrieve all the todos records from todos table whose name attribute value is \"todo\"",
+			"description": "retrieve all the todos records from todos table whose name attribute value is \"todo\"",
+			"descriptionFormat": "html",
+			"time": 1513253488470,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "2d2b2e98-e7c2-df7f-c3d4-8a38c6650792",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/v1/countbyname/sometodo",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1f44c0f6-9fb0-e934-6af0-dc071b78501f",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get the record count whose name attribute has \"sometodo\" value",
+			"description": "count of records in todos table whose name attribute has \"sometodo\" value",
+			"descriptionFormat": "html",
+			"time": 1513246986912,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3df17762-3f9c-5f1b-9e2f-3533587eec33",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/v1/todo",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "1f44c0f6-9fb0-e934-6af0-dc071b78501f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create todo records in todos table",
+			"description": "Create todo records in todos table",
+			"descriptionFormat": "html",
+			"time": 1513246877872,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"name\" : \"sometodo\",\n\t\"description\" : \"this is some todo\"\n}"
+		}
+	]
+}
