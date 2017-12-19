@@ -29,7 +29,7 @@ public class RepositoryTodoSearchService implements TodoSearchService {
 	@Autowired(required = true)
 	private TodoRepository todoRepository;
 	private static Pageable pageRequest;
-	private static final int PAGE_NUMBER = 1;
+	private static final int PAGE_NUMBER = 0;
 	private static final int PAGE_SIZE = 4;
 //	private static Logger logger = LoggerFactory.getLogger(RepositoryTodoSearchService.class);
 	
