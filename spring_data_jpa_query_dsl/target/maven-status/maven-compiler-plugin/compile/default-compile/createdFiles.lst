@@ -1,6 +1,7 @@
 com\amdocs\service\TodoSearchService.class
 com\amdocs\service\RepositoryTodoSearchService.class
 com\amdocs\SpringDataJpaQueryDslApplication.class
+com\amdocs\service\PageBuilder.class
 com\amdocs\models\QTodo.class
 com\amdocs\models\Todo.class
 com\amdocs\repositories\TodoRepository.class

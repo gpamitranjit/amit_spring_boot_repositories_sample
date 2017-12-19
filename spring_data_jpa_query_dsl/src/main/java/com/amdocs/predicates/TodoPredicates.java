@@ -8,6 +8,12 @@ public class TodoPredicates {
 	private TodoPredicates() {}
 	
 	public static Predicate hasName(String name) {
-		return QTodo.todo.name.eq(name);
+		if(name ==null || name.isEmpty()) {
+			return QTodo.todo.isNotNull();
+		}
+		else {
+			return QTodo.todo.name.eq(name);
+		}
+		
 	}
 }
