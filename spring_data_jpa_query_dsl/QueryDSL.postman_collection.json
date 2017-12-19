@@ -1,0 +1,45 @@
+{
+	"id": "321d1d7d-ff55-727d-0a00-f6a27e32e005",
+	"name": "QueryDSL",
+	"description": "",
+	"order": [
+		"4c99cb7f-7010-a4dd-0b6f-c7cdf1bc5af7"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1513687661144,
+	"owner": "2037757",
+	"public": false,
+	"requests": [
+		{
+			"id": "4c99cb7f-7010-a4dd-0b6f-c7cdf1bc5af7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/myamit",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "321d1d7d-ff55-727d-0a00-f6a27e32e005",
+			"data": null,
+			"dataMode": "params",
+			"name": "search all entries whose name is \"myamit\"",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1513687693439,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
