@@ -15,10 +15,10 @@ public class Todo {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String id;
 	
-	@Column(name = "name", nullable = false, length = 100)
+	@Column(name = "name", nullable = true, length = 100)
 	private String name;
 	
-	@Column(name = "description", nullable = false, length = 500)
+	@Column(name = "description", nullable = true, length = 500)
 	private String description;
 
 	public Todo() {

@@ -7,4 +7,6 @@ import com.amdocs.models.Todo;
 public interface TodoSearchService {
 
 	List<Todo> findBySearchTerm(String searchTerm);
+
+	Long getcount();
 }

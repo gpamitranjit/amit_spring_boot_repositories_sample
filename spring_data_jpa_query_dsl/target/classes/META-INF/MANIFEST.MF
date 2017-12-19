@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: spring_data_jpa_query_dsl
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: patilami
+Built-By: Amit
 Implementation-Vendor-Id: com.amdocs
-Build-Jdk: 1.8.0_60
+Build-Jdk: 1.8.0_131
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.
 

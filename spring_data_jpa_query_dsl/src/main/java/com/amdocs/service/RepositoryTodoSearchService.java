@@ -61,5 +61,10 @@ public class RepositoryTodoSearchService implements TodoSearchService {
 		
 		return todosList;
 	}
+	
+	@Override
+	public Long getcount() {
+		return todoRepository.count(TodoPredicates.toalDistinctCount());
+	}
 
 }

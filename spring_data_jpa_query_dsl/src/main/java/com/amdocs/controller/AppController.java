@@ -20,4 +20,9 @@ public class AppController {
 	public List<Todo> searchbyname(@PathVariable("name") String name) {
 		return service.findBySearchTerm(name);
 	}
+	
+	@RequestMapping("/todos/totaldistinctcount")
+	public Long getAllDistintCount() {
+		return service.getcount();
+	}
 }
