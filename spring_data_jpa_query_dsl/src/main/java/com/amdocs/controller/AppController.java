@@ -21,7 +21,7 @@ public class AppController {
 		return service.findBySearchTerm(name);
 	}
 	
-	@RequestMapping("/todos/totaldistinctcount")
+	@RequestMapping("/todos/namenotnull")
 	public Long getAllDistintCount() {
 		return service.getcount();
 	}

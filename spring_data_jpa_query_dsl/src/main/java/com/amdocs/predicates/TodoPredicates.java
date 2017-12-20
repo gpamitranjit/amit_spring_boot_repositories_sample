@@ -20,7 +20,7 @@ public class TodoPredicates {
 	}
 	
 	public static Predicate toalDistinctCount() {
-		return QTodo.todo.name.countDistinct().goe(0);
+		return QTodo.todo.name.isNotNull();
 	}
 	
 }

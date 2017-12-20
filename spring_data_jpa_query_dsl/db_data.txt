@@ -7,5 +7,6 @@ INSERT INTO TODOS(ID, NAME, DESCRIPTION)  VALUES ('105', 'mytodo', 'some work he
 INSERT INTO TODOS(ID, NAME, DESCRIPTION)  VALUES ('106', 'myamit', 'some work here.');
 INSERT INTO TODOS(ID, NAME, DESCRIPTION)  VALUES ('107', 'myamit', 'some work here.');
 INSERT INTO TODOS(ID, NAME, DESCRIPTION)  VALUES ('108', 'myamit', 'some work here.');
-
+INSERT INTO TODOS(ID, NAME, DESCRIPTION)  VALUES ('109', null, null);
+INSERT INTO TODOS(ID, NAME, DESCRIPTION)  VALUES ('110', null, null);
 select * from todos;
