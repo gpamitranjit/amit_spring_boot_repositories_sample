@@ -8,6 +8,7 @@ public class TodoPredicates {
 	private TodoPredicates() {}
 	
 	public static Predicate hasName(String name) {
+	
 		if(name ==null || name.isEmpty()) {
 			return QTodo.todo.isNotNull();
 		}
@@ -15,9 +16,11 @@ public class TodoPredicates {
 			return QTodo.todo.name.eq(name);
 		}
 		
+		
 	}
 	
 	public static Predicate toalDistinctCount() {
-		return QTodo.todo.name.isNotNull();
+		return QTodo.todo.name.countDistinct().goe(0);
 	}
+	
 }
