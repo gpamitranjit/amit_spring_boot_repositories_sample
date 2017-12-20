@@ -3,11 +3,12 @@
 	"name": "QueryDSL",
 	"description": "",
 	"order": [
-		"4c99cb7f-7010-a4dd-0b6f-c7cdf1bc5af7"
+		"4c99cb7f-7010-a4dd-0b6f-c7cdf1bc5af7",
+		"cadc2d77-9ae8-8d41-e14f-3f7ea4b16a9a"
 	],
 	"folders": [],
 	"folders_order": [],
-	"timestamp": 1513687661144,
+	"timestamp": 0,
 	"owner": "2037757",
 	"public": false,
 	"requests": [
@@ -22,7 +23,35 @@
 					"enabled": true
 				}
 			],
-			"url": "localhost:8080/myamit",
+			"url": "localhost:8080/todos/myamit",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1513771597644,
+			"name": "search all entries whose name is \"myamit\"",
+			"description": null,
+			"collectionId": "321d1d7d-ff55-727d-0a00-f6a27e32e005"
+		},
+		{
+			"id": "cadc2d77-9ae8-8d41-e14f-3f7ea4b16a9a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/todos/namenotnull",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
@@ -31,10 +60,10 @@
 			"collectionId": "321d1d7d-ff55-727d-0a00-f6a27e32e005",
 			"data": null,
 			"dataMode": "params",
-			"name": "search all entries whose name is \"myamit\"",
-			"description": "",
+			"name": "retrieve all the todo objects whose name attribute is not null",
+			"description": "retrieve all the todo objects whose name attribute is not null",
 			"descriptionFormat": "html",
-			"time": 1513687693439,
+			"time": 1513771576082,
 			"version": 2,
 			"responses": [],
 			"tests": null,

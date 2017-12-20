@@ -16,7 +16,7 @@ public class AppController {
 	@Autowired
 	private TodoSearchService service;
 	
-	@RequestMapping("/{name}")
+	@RequestMapping("/todos/{name}")
 	public List<Todo> searchbyname(@PathVariable("name") String name) {
 		return service.findBySearchTerm(name);
 	}
