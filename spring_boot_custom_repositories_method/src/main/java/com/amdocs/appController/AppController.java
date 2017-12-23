@@ -17,7 +17,7 @@ public class AppController {
 	private AppService appService;
 	
 	@RequestMapping(value = "/retrievecustomobjects/{searchTerm}")
-	public List<TodoSearchResultDTO>retrieveCustomObjects(@PathVariable("searchTerm") String searchTerm) {
+	public List<TodoSearchResultDTO> retrieveCustomObjects(@PathVariable("searchTerm") String searchTerm) {
 		return appService.retrieveCustomObjects(searchTerm);
 	}
 }
