@@ -1,0 +1,48 @@
+{
+	"id": "1be87d0d-6a0e-49cb-7fa7-e830cd89eeeb",
+	"name": "Spring_repository_custom_methods",
+	"description": "Adding custom methods to single repository that returns the configured custom objects.",
+	"order": [
+		"55039534-264f-3088-b033-bea712687b68"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1514039204464,
+	"owner": "2037757",
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "55039534-264f-3088-b033-bea712687b68",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/retrievecustomobjects/mytodo",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "1be87d0d-6a0e-49cb-7fa7-e830cd89eeeb",
+			"data": null,
+			"dataMode": "params",
+			"name": "Retrieve all the custom todo objects",
+			"description": "Retrieve all the custom repositories whose searchTerm matches either with title or descritpion of the todos records.",
+			"descriptionFormat": "html",
+			"time": 1514039298693,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}
