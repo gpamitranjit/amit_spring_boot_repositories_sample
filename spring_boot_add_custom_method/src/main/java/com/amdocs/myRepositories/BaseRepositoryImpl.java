@@ -9,6 +9,12 @@ import javax.persistence.EntityManager;
 import java.io.Serializable;
 import java.util.Optional;
  
+/**
+ * @author Amit
+ *
+ * @param <T>
+ * @param <ID>
+ */
 public class BaseRepositoryImpl <T, ID extends Serializable> extends SimpleJpaRepository<T, ID>  implements BaseRepository<T, ID> {
     
     private final EntityManager entityManager;

@@ -1,10 +1,10 @@
 package com.amdocs.persistenceConfiguration;
 
 import java.util.Properties;
+
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -19,10 +19,6 @@ import com.amdocs.myRepositories.BaseRepositoryImpl;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
-
-
-
-
 /**
  * @author Amit
  *
@@ -32,7 +28,6 @@ import com.zaxxer.hikari.HikariDataSource;
 @EnableTransactionManagement
 public class PersistenceContext {
 
-	private final static Logger logger = LoggerFactory.getLogger(PersistenceContext.class);
 	
 	@Bean(destroyMethod = "close")
 	DataSource dataSource(Environment env) {
