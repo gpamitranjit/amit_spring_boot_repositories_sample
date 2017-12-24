@@ -1,0 +1,48 @@
+{
+	"id": "a11255b6-0315-9d87-192a-4a2c5c9cc55d",
+	"name": "spring_boot_add_custom_metods",
+	"description": "Add customs methods to all repositories.",
+	"order": [
+		"fbb68bed-348d-be2d-8698-722a4fdaedcb"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1514139030257,
+	"owner": "2037757",
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "fbb68bed-348d-be2d-8698-722a4fdaedcb",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/todo/100",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "DELETE",
+			"collectionId": "a11255b6-0315-9d87-192a-4a2c5c9cc55d",
+			"data": null,
+			"dataMode": "params",
+			"name": "Delete todo entity",
+			"description": "Delete todo entity whose id is 100",
+			"descriptionFormat": "html",
+			"time": 1514139103621,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}

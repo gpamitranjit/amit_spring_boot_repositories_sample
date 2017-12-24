@@ -1,0 +1,11 @@
+INSERT INTO TODOS(ID, TITLE, DESCRIPTION)  VALUES ('100', 'mytodo', 'some work here.');
+INSERT INTO TODOS(ID, TITLE, DESCRIPTION)  VALUES ('101', 'mytodo', 'some work here.');
+INSERT INTO TODOS(ID, TITLE, DESCRIPTION)  VALUES ('102', 'mytodo', 'some work here.');
+INSERT INTO TODOS(ID, TITLE, DESCRIPTION)  VALUES ('103', 'mytodo', 'some work here.');
+INSERT INTO TODOS(ID, TITLE, DESCRIPTION)  VALUES ('104', 'mytodo', 'some work here.');
+INSERT INTO TODOS(ID, TITLE, DESCRIPTION)  VALUES ('105', 'mytodo', 'some work here.');
+INSERT INTO TODOS(ID, TITLE, DESCRIPTION)  VALUES ('106', 'myamit', 'some work here.');
+INSERT INTO TODOS(ID, TITLE, DESCRIPTION)  VALUES ('107', 'myamit', 'some work here.');
+INSERT INTO TODOS(ID, TITLE, DESCRIPTION)  VALUES ('108', 'myamit', 'some work here.');
+
+select * from todos;
