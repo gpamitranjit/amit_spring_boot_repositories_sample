@@ -14,11 +14,11 @@ import org.springframework.transaction.annotation.Transactional;
 public interface BaseRepository<T, ID extends Serializable> extends Repository<T, ID> {
 	
 	@Transactional
-	@Modifying
+	@Modifying(clearAutomatically = true)
 	@Query(value = "DELETE FROM TODOs AS t WHERE t.id= :id", nativeQuery = true)
 	public void delete(@Param("id") String id);
 	
-	@Transactional()
+	@Transactional
 	public T save(T todo);
 	
 	@Transactional(readOnly = true)
