@@ -6,8 +6,11 @@ import org.aspectj.lang.annotation.Before;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableLoadTimeWeaving;
+import org.springframework.context.annotation.EnableLoadTimeWeaving.AspectJWeaving;
 
 @Configuration
+@EnableLoadTimeWeaving(aspectjWeaving=AspectJWeaving.ENABLED)
 @Aspect
 public class AOPConfiguration {
 
