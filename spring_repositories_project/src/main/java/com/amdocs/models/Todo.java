@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class Todo {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private String id;
 	
 	@Column(name = "name", length = 100)
