@@ -1,11 +1,12 @@
 package com.amit.app.service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.amit.app.exception.CustomerNotFoundException;
@@ -26,9 +27,24 @@ public class CustomerService {
 		this.customerToCustomerDTOTransformer = customerToCustomerDTOTransformer;
 	}
 	
-	public List<CustomerDTO> getAllCustomer() {
+	public List<CustomerDTO> getAllCustomers() {
+		Iterable<Customer> iterableCustomers = customerRepository.findAll();
 		List<Customer> customers = new ArrayList<>();
-		customerRepository.findAll().forEach(customers::add);
+		iterableCustomers.forEach(customers::add);
+		return customerToCustomerDTOTransformer.transform(customers);
+	}
+	
+	public List<CustomerDTO> getAllSortedCustomers(Sort sort) {
+		Iterable<Customer> iterableCustomers = customerRepository.findAll(sort);
+		List<Customer> customers = new ArrayList<>();
+		iterableCustomers.forEach(customers::add);
+		return customerToCustomerDTOTransformer.transform(customers);
+	}
+
+	public List<CustomerDTO> getPaginatedCustomers(Pageable pageable) {
+		Iterable<Customer> iterableCustomers = customerRepository.findAll(pageable);
+		List<Customer> customers = new ArrayList<>();
+		iterableCustomers.forEach(customers::add);
 		return customerToCustomerDTOTransformer.transform(customers);
 	}
 	

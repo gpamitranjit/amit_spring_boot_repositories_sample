@@ -1,0 +1,154 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Customer-jpa-service",
+		"_postman_id": "45eb9a7f-834d-c635-1492-c3de27267453",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create customer",
+			"request": {
+				"url": "localhost:9090/v1.0/customer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Amit\",\n\t\"lastName\": \"Patil\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve customer by id",
+			"request": {
+				"url": "localhost:9090/v1.0/customers/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Amit\",\n\t\"lastName\": \"Patil\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve paginated customers with first page, page-size=2, descending order of \"id\" column",
+			"request": {
+				"url": {
+					"raw": "localhost:9090/v1.0/customers/paginated?page=0&size=2&sort=id,desc",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1.0",
+						"customers",
+						"paginated"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "size",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sort",
+							"value": "id,desc",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Amit\",\n\t\"lastName\": \"Patil\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve All customers",
+			"request": {
+				"url": "localhost:9090/v1.0/customers",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve All customers in descending order of \"id\" column",
+			"request": {
+				"url": {
+					"raw": "localhost:9090/v1.0/customers/sorted?sort=id,desc",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1.0",
+						"customers",
+						"sorted"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "id,desc",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Amit\",\n\t\"lastName\": \"Patil\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
