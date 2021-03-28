@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Customer-jpa-service",
+		"_postman_id": "45eb9a7f-834d-c635-1492-c3de27267453",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create customer",
+			"request": {
+				"url": "localhost:8080/v1.0/customer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Amit\",\n\t\"lastName\": \"Patil\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve customer by id",
+			"request": {
+				"url": "localhost:8080/v1.0/customers/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Amit\",\n\t\"lastName\": \"Patil\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve all customers",
+			"request": {
+				"url": "localhost:8080/v1.0/customers",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Amit\",\n\t\"lastName\": \"Patil\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
