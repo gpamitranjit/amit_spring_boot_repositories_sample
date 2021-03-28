@@ -1,0 +1,110 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Tutorials-jpa-mysql-service",
+		"_postman_id": "f8b03ca4-d6d7-9d70-4a8e-9120894ec667",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve all tutorials",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/v1.0/tutorials?title=gang&pageNumber=1&pageSize=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1.0",
+						"tutorials"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "gang",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pageSize",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Save Tutorial details",
+			"request": {
+				"url": "localhost:8080/v1.0/tutorial",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"gang of wasepur\",\n\t\"description\" : \"this is a description about gang of wasepur.\",\n\t\"published\": \"true\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve all tutorials which are published!! with pageNumber 1 and page size 3",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/v1.0/tutorials/published?pageSize=3&pageNumber=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1.0",
+						"tutorials",
+						"published"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "3",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pageNumber",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
