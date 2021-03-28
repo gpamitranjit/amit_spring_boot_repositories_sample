@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.amit</groupId>
-	<artifactId>customer-jpa-service</artifactId>
+	<artifactId>customer-jpa-mysql-service-paging-and-Sorting-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>customer-jpa-service</name>
+	<name>customer-jpa-mysql-service paging and Sorting</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
