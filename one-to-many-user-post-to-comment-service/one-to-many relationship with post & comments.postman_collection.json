@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "one-to-many relationship with post & comments",
+		"_postman_id": "6d631cb9-606c-aecb-5509-3397feabc917",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create new Post with no comments initialy",
+			"request": {
+				"url": "localhost:8080/v1.0/post",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"This is my first post!!\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve post with id : 1",
+			"request": {
+				"url": "localhost:8080/v1.0/posts/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve all posts",
+			"request": {
+				"url": "localhost:8080/v1.0/posts",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
