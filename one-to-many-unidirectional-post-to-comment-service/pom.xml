@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.amit</groupId>
-	<artifactId>one-to-many-user-post-to-comment-service</artifactId>
+	<artifactId>one-to-many-unidirectional-post-to-comment-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>one-to-many-user-post-to-comment-service</name>
+	<name>one-to-many-unidirectional-post-to-comment-service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
