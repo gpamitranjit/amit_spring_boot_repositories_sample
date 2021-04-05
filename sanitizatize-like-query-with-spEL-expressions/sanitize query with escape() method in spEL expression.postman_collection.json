@@ -1,0 +1,49 @@
+{
+	"variables": [],
+	"info": {
+		"name": "sanitize query with escape() method in spEL expression",
+		"_postman_id": "9ab1f390-338c-bad0-10da-417e98b17d69",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create new tutorial record in DB",
+			"request": {
+				"url": "localhost:8080/v1.0/tutorial",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"this is some title about my tutorial#1\",\n\t\"description\": \"this some description about tutorial#1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve tutorials whose title starting with \"this_\"",
+			"request": {
+				"url": "localhost:8080/v1.0/tutorials/tutorial/this_",
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": "Note we are tailing underscore to perform sql injection"
+			},
+			"response": []
+		}
+	]
+}
