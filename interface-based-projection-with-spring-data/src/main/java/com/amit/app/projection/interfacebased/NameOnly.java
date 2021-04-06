@@ -9,4 +9,8 @@ public interface NameOnly {
 	
 	@Value("#{target.firstname + ' ' + target.lastname}")
 	String getFullname();
+	
+	default String getNameDetails() {
+		return getFirstname().concat(" ").concat(getLastname());
+	}
 }
