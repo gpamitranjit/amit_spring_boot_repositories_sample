@@ -1,0 +1,13 @@
+
+Mysql Procedure to be executed on DB --Just copy & paste in terminal
+==================================================================
+
+DELIMITER //
+
+CREATE PROCEDURE incrementandget(IN var1 INT, OUT var2 INT)
+BEGIN
+	SELECT var1 + 1 INTO var2;
+END //
+
+DELIMITER ;
+

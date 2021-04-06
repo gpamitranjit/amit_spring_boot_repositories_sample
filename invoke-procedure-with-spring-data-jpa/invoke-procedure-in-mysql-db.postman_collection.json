@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "invoke-procedure-in-mysql-db",
+		"_postman_id": "9f6f3f23-4cce-1961-ce5a-99cec23fd67b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Invoke 'incrementandget' procedure in mysql DB",
+			"request": {
+				"url": "localhost:8080/v1.0/invoke/procedure/input/5",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
