@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "dynamic-projections-with-spring-data-jpa",
+		"_postman_id": "a8e85008-4c3c-15fe-519e-37f7b9c2496f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save new Person in DB",
+			"request": {
+				"url": "localhost:8080/v1.0/person",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstname\": \"amit\",\n\t\"lastname\": \"patil\",\n\t\"address\": {\n\t\t\"city\": \"bengaluru\",\n\t\t\"street\": \"some street\",\n\t\t\"zipCode\": \"some zipcode\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve NameOnly Projection (partial view) from DB",
+			"request": {
+				"url": "localhost:8080/v1.0/parial-projection/person/nameonly/patil",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve PersonSummary projection (partial view) from DB",
+			"request": {
+				"url": "localhost:8080/v1.0/parial-projection/person/personsummary/amit",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
